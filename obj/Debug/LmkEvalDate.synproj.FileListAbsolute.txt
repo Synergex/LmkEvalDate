@@ -1,0 +1,8 @@
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\bin\Debug\LmkEvalDate.exe
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\bin\Debug\LmkEvalDate.pdb
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.Form1.resources
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.Properties.Resources.resources
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.synproj.GenerateResource.Cache
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.exe
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.pdb
+D:\Conference\2013\08_LicensingToolkit\Tutorials\LicensingToolkitComplete\LmkEvalDate\obj\Debug\LmkEvalDate.synprojResolveAssemblyReference.cache
