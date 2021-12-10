@@ -1,0 +1,135 @@
+namespace LmkEvalDate
+
+	public partial class Form1 extends System.Windows.Forms.Form
+
+		private btn60days, @System.Windows.Forms.Button
+		private datePicker, @System.Windows.Forms.DateTimePicker
+		private btn90days, @System.Windows.Forms.Button
+		private txtResult, @System.Windows.Forms.TextBox
+		private components, @System.ComponentModel.IContainer
+		private btnYear, @System.Windows.Forms.Button
+		private btn30Days, @System.Windows.Forms.Button
+		private lblExpiryDate, @System.Windows.Forms.Label
+		private lblResult, @System.Windows.Forms.Label
+
+		private method InitializeComponent, void
+			endparams
+		proc
+			this.lblExpiryDate = new System.Windows.Forms.Label()
+			this.datePicker = new System.Windows.Forms.DateTimePicker()
+			this.lblResult = new System.Windows.Forms.Label()
+			this.txtResult = new System.Windows.Forms.TextBox()
+			this.btn30Days = new System.Windows.Forms.Button()
+			this.btn60days = new System.Windows.Forms.Button()
+			this.btn90days = new System.Windows.Forms.Button()
+			this.btnYear = new System.Windows.Forms.Button()
+			this.SuspendLayout()
+			;; 
+			;; lblExpiryDate
+			;; 
+			this.lblExpiryDate.AutoSize = true
+			this.lblExpiryDate.Location = new System.Drawing.Point(12, 18)
+			this.lblExpiryDate.Name = "lblExpiryDate"
+			this.lblExpiryDate.Size = new System.Drawing.Size(304, 17)
+			this.lblExpiryDate.TabIndex = 0
+			this.lblExpiryDate.Text = "Select the date you would like the trial to expire"
+			;; 
+			;; datePicker
+			;; 
+			this.datePicker.Location = new System.Drawing.Point(15, 48)
+			this.datePicker.Name = "datePicker"
+			this.datePicker.Size = new System.Drawing.Size(317, 22)
+			this.datePicker.TabIndex = 1
+			addhandler(this.datePicker.ValueChanged, new System.EventHandler(this.datePicker_ValueChanged))
+			;; 
+			;; lblResult
+			;; 
+			this.lblResult.AutoSize = true
+			this.lblResult.Location = new System.Drawing.Point(12, 126)
+			this.lblResult.Name = "lblResult"
+			this.lblResult.Size = new System.Drawing.Size(290, 17)
+			this.lblResult.TabIndex = 2
+			this.lblResult.Text = "Use the following value with the lmk -d option"
+			;; 
+			;; txtResult
+			;; 
+			this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", (float)12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (byte)0)
+			this.txtResult.Location = new System.Drawing.Point(189, 150)
+			this.txtResult.Name = "txtResult"
+			this.txtResult.ReadOnly = true
+			this.txtResult.Size = new System.Drawing.Size(143, 30)
+			this.txtResult.TabIndex = 3
+			;; 
+			;; btn30Days
+			;; 
+			this.btn30Days.Location = new System.Drawing.Point(15, 85)
+			this.btn30Days.Name = "btn30Days"
+			this.btn30Days.Size = new System.Drawing.Size(75, 25)
+			this.btn30Days.TabIndex = 4
+			this.btn30Days.Text = "30 days"
+			this.btn30Days.UseVisualStyleBackColor = true
+			addhandler(this.btn30Days.Click, new System.EventHandler(this.btn30Days_Click))
+			;; 
+			;; btn60days
+			;; 
+			this.btn60days.Location = new System.Drawing.Point(96, 85)
+			this.btn60days.Name = "btn60days"
+			this.btn60days.Size = new System.Drawing.Size(75, 25)
+			this.btn60days.TabIndex = 5
+			this.btn60days.Text = "60 days"
+			this.btn60days.UseVisualStyleBackColor = true
+			addhandler(this.btn60days.Click, new System.EventHandler(this.btn60days_Click))
+			;; 
+			;; btn90days
+			;; 
+			this.btn90days.Location = new System.Drawing.Point(177, 85)
+			this.btn90days.Name = "btn90days"
+			this.btn90days.Size = new System.Drawing.Size(75, 25)
+			this.btn90days.TabIndex = 6
+			this.btn90days.Text = "90 days"
+			this.btn90days.UseVisualStyleBackColor = true
+			addhandler(this.btn90days.Click, new System.EventHandler(this.btn90days_Click))
+			;; 
+			;; btnYear
+			;; 
+			this.btnYear.Location = new System.Drawing.Point(258, 85)
+			this.btnYear.Name = "btnYear"
+			this.btnYear.Size = new System.Drawing.Size(75, 25)
+			this.btnYear.TabIndex = 7
+			this.btnYear.Text = "1 year"
+			this.btnYear.UseVisualStyleBackColor = true
+			addhandler(this.btnYear.Click, new System.EventHandler(this.btnYear_Click))
+			;; 
+			;; Form1
+			;; 
+			this.ClientSize = new System.Drawing.Size(344, 201)
+			this.Controls.Add(this.btnYear)
+			this.Controls.Add(this.btn90days)
+			this.Controls.Add(this.btn60days)
+			this.Controls.Add(this.btn30Days)
+			this.Controls.Add(this.txtResult)
+			this.Controls.Add(this.lblResult)
+			this.Controls.Add(this.datePicker)
+			this.Controls.Add(this.lblExpiryDate)
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+			this.MaximizeBox = false
+			this.MinimizeBox = false
+			this.Name = "Form1"
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+			this.Text = "LMK Trial License Days"
+			addhandler(this.Load, new System.EventHandler(this.Form1_Load))
+			this.ResumeLayout(false)
+			this.PerformLayout()
+		endmethod
+
+		protected override method Dispose, void
+			disposing, System.Boolean 
+			endparams
+		proc
+			if (disposing && (components != ^null))
+				components.Dispose()
+			parent.Dispose(disposing)
+		endmethod
+	endclass
+endnamespace
+

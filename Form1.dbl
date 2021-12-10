@@ -1,0 +1,80 @@
+import System
+import System.Collections.Generic
+import System.ComponentModel
+import System.Data
+import System.Drawing
+import System.Windows.Forms
+
+namespace LmkEvalDate
+
+	public partial class Form1 extends System.Windows.Forms.Form
+		
+		public method Form1
+			endparams
+		proc
+			this.InitializeComponent()
+		endmethod
+		
+		private method Form1_Load, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			datePicker.Value = DateTime.Now.AddDays(30)
+		endmethod
+		
+		private method datePicker_ValueChanged, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			calculate()
+		endmethod
+
+		method calculate, void
+			endparams
+		proc
+			data theDate, d8
+			theDate = (datePicker.Value.Year * 10000) + (datePicker.Value.Month * 100) + (datePicker.Value.Day)
+			txtResult.Text = %string(%jperiod(theDate) - %jperiod(19920101))
+			txtResult.SelectAll()
+			txtResult.Copy()
+			txtResult.SelectionLength=0
+		endmethod
+		
+		private method btn30Days_Click, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			datePicker.Value = DateTime.Now.AddDays(30)
+		endmethod
+		
+		private method btn60days_Click, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			datePicker.Value = DateTime.Now.AddDays(60)
+		endmethod
+		
+		private method btn90days_Click, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			datePicker.Value = DateTime.Now.AddDays(90)	
+		endmethod
+
+		private method btnYear_Click, void
+			sender, @object 
+			e, @System.EventArgs 
+			endparams
+		proc
+			datePicker.Value = DateTime.Now.AddYears(1)
+		endmethod
+		
+	endclass
+
+endnamespace
+
