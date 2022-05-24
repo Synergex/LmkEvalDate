@@ -9,8 +9,9 @@ The number of days calculated is used as a command line option with the
 -d option to the LMK utility
 
 ```
-lmk -otheroptions -d <dayoffset><br />
-```  
+lmk -otheroptions -d <dayoffset>
+``` 
+<br />
 **Platforms:** Windows<br />
 **Products:** Synergy .NET<br />
 **Minimum Version:** 9.5.3b<br />
